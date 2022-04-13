@@ -13,7 +13,7 @@ public with sharing class GeocodingService {
                 ? '&street=' + address.street
                 : '';
             geocodingUrl += (String.isNotBlank(address.city))
-                ? '&city=' + address.city
+                ? '&city=' + address.city   
                 : '';
             geocodingUrl += (String.isNotBlank(address.state))
                 ? '&state=' + address.state
