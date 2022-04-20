@@ -15,7 +15,7 @@ private with sharing class GeocodingServiceTest {
         address.street = STREET;
         address.city = CITY;
         address.postalcode = POSTAL_CODE;
-        address.state = STATE;
+        address.state = STATE;                       
         address.country = COUNTRY;
 
         Test.setMock(

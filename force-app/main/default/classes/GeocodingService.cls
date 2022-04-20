@@ -30,13 +30,13 @@ public with sharing class GeocodingService {
                 Http http = new Http();
                 HttpRequest request = new HttpRequest();
                 request.setEndpoint(geocodingUrl);
-                request.setMethod('GET');
-                request.setHeader(
-                    'http-referer',
+                request.setMethod('GET');                
+                request.setHeader(                
+                    'http-referer',    
                     URL.getSalesforceBaseUrl().toExternalForm()
-                );
-                HttpResponse response = http.send(request);
-                if (response.getStatusCode() == 200) {
+                );             
+                HttpResponse response = http.send(request);    
+                if (response.getStatusCode() == 200) {   
                     List<Coordinates> deserializedCoords = (List<Coordinates>) JSON.deserialize(
                         response.getBody(),
                         List<Coordinates>.class
