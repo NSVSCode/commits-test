@@ -16,7 +16,7 @@ private with sharing class GeocodingServiceTest {
         address.city = CITY;
         address.postalcode = POSTAL_CODE;
         address.state = STATE;                       
-        address.country = COUNTRY;     
+        address.country = COUNTRY;          
 
         Test.setMock(
             HttpCalloutMock.class,
