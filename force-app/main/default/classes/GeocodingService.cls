@@ -31,7 +31,7 @@ public with sharing class GeocodingService {
                 HttpRequest request = new HttpRequest();
                 request.setEndpoint(geocodingUrl);
                 request.setMethod('GET');                
-                request.setHeader(                
+                request.setHeader(                      
                     'http-referer',    
                     URL.getSalesforceBaseUrl().toExternalForm()
                 );             
