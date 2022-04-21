@@ -9,6 +9,6 @@ public with sharing class PagedResult {
     public Integer totalItemCount { get; set; }
 
     @AuraEnabled
-    public Object[] records { get; set; }
+    public Object[] records { get; set; }      
 }
      
