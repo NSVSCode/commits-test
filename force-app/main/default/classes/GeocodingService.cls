@@ -21,7 +21,7 @@ public with sharing class GeocodingService {
             geocodingUrl += (String.isNotBlank(address.country))         
                 ? '&country=' + address.country
                 : '';
-            geocodingUrl += (String.isNotBlank(address.postalcode))
+            geocodingUrl += (String.isNotBlank(address.postalcode))   
                 ? '&postalcode=' + address.postalcode     
                 : '';
 
