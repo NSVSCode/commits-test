@@ -15,7 +15,7 @@ public with sharing class GeocodingService {
             geocodingUrl += (String.isNotBlank(address.city))     
                 ? '&city=' + address.city   
                 : '';
-            geocodingUrl += (String.isNotBlank(address.state))
+            geocodingUrl += (String.isNotBlank(address.state))    
                 ? '&state=' + address.state
                 : '';
             geocodingUrl += (String.isNotBlank(address.country))         
