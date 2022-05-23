@@ -26,7 +26,7 @@ public with sharing class PropertyController {
             ? DEFAULT_MAX_PRICE
             : maxPrice);
         Integer safeMinBedrooms = (minBedrooms == null ? 0 : minBedrooms);
-        Integer safeMinBathrooms = (minBathrooms == null ? 0 : minBathrooms);
+        Integer safeMinBathrooms = (minBathrooms == null ? 0 : minBathrooms);     
         Integer safePageSize = (pageSize == null
             ? DEFAULT_PAGE_SIZE
             : pageSize);
