@@ -18,7 +18,7 @@ public with sharing class PropertyController {
         Decimal maxPrice,
         Integer minBedrooms,
         Integer minBathrooms,
-        Integer pageSize,
+        Integer pageSize,    
         Integer pageNumber
     ) {
         // Normalize inputs

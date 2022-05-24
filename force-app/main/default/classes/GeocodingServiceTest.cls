@@ -21,7 +21,7 @@ private with sharing class GeocodingServiceTest {
         Test.setMock(
             HttpCalloutMock.class,
             new OpenStreetMapHttpCalloutMockImpl()
-        );
+        );     
 
         // WHEN
         List<GeocodingService.Coordinates> computedCoordinates = GeocodingService.geocodeAddresses(
