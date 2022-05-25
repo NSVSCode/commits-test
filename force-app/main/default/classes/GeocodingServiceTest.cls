@@ -30,7 +30,7 @@ private with sharing class GeocodingServiceTest {
 
         // THEN
         System.assert(
-            computedCoordinates.size() == 1,
+            computedCoordinates.size() == 1,    
             'Expected 1 pair of coordinates were returned'
         );
         System.assert(
