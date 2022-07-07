@@ -23,7 +23,7 @@ public with sharing class GeocodingService {
                 : '';
             geocodingUrl += (String.isNotBlank(address.postalcode))      
                 ? '&postalcode=' + address.postalcode     
-                : '';
+                : ''; 
 
             Coordinates coords = new Coordinates();
             if (geocodingUrl != BASE_URL) {    
