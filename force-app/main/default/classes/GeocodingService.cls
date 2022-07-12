@@ -16,7 +16,7 @@ public with sharing class GeocodingService {
                 ? '&city=' + address.city   
                 : '';
             geocodingUrl += (String.isNotBlank(address.state))    
-                ? '&state=' + address.state
+                ? '&state=' + address.state  
                 : '';
             geocodingUrl += (String.isNotBlank(address.country))                
                 ? '&country=' + address.country
@@ -26,7 +26,7 @@ public with sharing class GeocodingService {
                 : ''; 
 
             Coordinates coords = new Coordinates();
-            if (geocodingUrl != BASE_URL) {    
+            if (geocodingUrl != BASE_URL) {      
                 Http http = new Http();
                 HttpRequest request = new HttpRequest();
                 request.setEndpoint(geocodingUrl);
